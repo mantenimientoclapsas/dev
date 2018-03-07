@@ -1,0 +1,8 @@
+@import '../herramientas/_variables';
+@import '../herramientas/_queries';
+
+.grid-1f-2c{
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+}

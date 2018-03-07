@@ -1,0 +1,10 @@
+@import "../herramientas/_variables";
+@import "../herramientas/_queries";
+
+.layout-blog{
+	width: 100%;
+	padding: 0 $gutter-blog;
+	@include querie(tablet){
+		padding: 0 $gutter-r;
+	}
+}

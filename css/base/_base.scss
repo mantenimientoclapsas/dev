@@ -1,0 +1,28 @@
+@import '../herramientas/_variables';
+@font-face{
+	font-family: 'Open sans';
+	src: url(../../recursos/tipografias/OpenSans-Regular.ttf) format('truetype');
+	font-weight: normal;
+}
+
+@font-face{
+	font-family: 'Roboto';
+	src: url(../../recursos/tipografias/Roboto-Bold.ttf) format('truetype');
+	font-weight: normal;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Open sans';
+	color: $gris;
+}
+
+body{
+	background-color: #fafafa;
+}
+
+.icon-menu-fontello{
+	font-size: 31px;
+}

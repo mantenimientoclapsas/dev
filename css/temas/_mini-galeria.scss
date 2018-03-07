@@ -1,0 +1,107 @@
+@import '../herramientas/_variables';
+@import '../herramientas/_queries';
+
+//asigno desde aquú la imagen de fondo para la página de "quienes somos"
+// para evitar dar un background fijo desde el "_banner.scss"
+.banner{
+	background-image: url(../../recursos/imagenes/equipo-trabajo.jpg);
+}
+.grid-2f-2c__item{
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	transform: scale(1);
+	transition: 1s;
+	&:hover .galeria-2f-2c__imagen{
+		transition: 600ms;
+		transform: scale(1.1);
+		
+	} 
+}
+.galeria-2f-2c__imagen{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: 1s;
+	&:hover{
+		cursor: pointer;
+	}
+}
+//deshabilitado por funcion de la ventana modal
+.galeria-2f-2c__filtro{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(dodgerblue, .10);
+	transition: 300ms;
+	&:hover{
+		background-color: rgba(dodgerblue, .15);
+		transition: 1s;
+	}
+}
+//estilos para ventana modal dinámica desde javascript
+.js-contenedor-modal{
+	position: fixed;
+	z-index: 350;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 9999px;
+	top: 0;
+	left: 0;
+	background-color: rgba(#000, .9);
+	transition: 1s ease;
+}
+.js-contenedor-imagen{
+	position: absolute;
+	top: 85px;
+	width: 100%;
+	height: 80vh;
+	padding: 0 $gutter-grid;
+	//border: 1px solid $blue-elegant;
+	//box-shadow: 0 0 1px $blue-elegant;
+}
+.js-modal-imagen{
+	width: 100%;
+	height: 100%;
+	object-fit: contain; //contain en vez de cover para que la imagen 
+						//siempre se visualize completa
+	
+}
+.js-icono-cerrar {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 21px;
+	height: 21px;
+	padding: 30px 25px;
+	cursor: pointer;
+  	&:after, &:before{
+  		content:"";
+	    position:absolute;
+	    top: 2rem;
+	    width:2rem;
+	    height:2px;
+	    background-color: #999;
+	    transform:rotate(45deg);
+	    opacity:.6; 
+  	}
+	&:before {
+		right:1rem; 
+	}
+	&:after{
+		right:1rem;
+    	transform:rotate(-45deg); 
+	}
+	&:hover:before{
+		background-color: #fff;
+	}
+	&:hover:after{
+		background-color: #fff;
+	}
+
+}

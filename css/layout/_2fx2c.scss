@@ -1,0 +1,26 @@
+@import '../herramientas/_variables';
+@import '../herramientas/_queries';
+.grid-2f-2c{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(2, 250px);
+	grid-gap: 10px;
+	width: 100%;
+	margin-bottom: $gutter-r;
+	padding: 0 $gutter-grid;
+	@include querie(tablet){
+		padding: 0 $gutter-r;
+	}
+	@media screen and (max-width: 500px){
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(3, 250px);
+		
+	}
+}
+
+//con esta clase logro el layout de la primera imagen de la mini galeria
+//para que ocupe dos filas
+.grid-2f-2c__span-2{
+	grid-column: 1 / 2;
+	grid-row: 1 / 3;
+} 

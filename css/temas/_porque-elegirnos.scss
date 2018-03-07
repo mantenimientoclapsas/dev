@@ -1,0 +1,26 @@
+@import '../herramientas/_variables';
+@import '../herramientas/_queries';
+
+.diferencia{
+	margin-bottom: 45px;
+}
+
+//tarjeta general de items "por qué elegirnos"
+.diferencia__item{
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	background-color: #fff;
+	transition: .2s;
+	&:hover{
+		box-shadow: 0 3px 8px #ccc;
+		transition: .2s;
+	}
+}
+
+.diferencia__texto{
+	font-size: $title-3;
+	@include querie(mobile){
+		font-size: $title-4;
+	}
+}

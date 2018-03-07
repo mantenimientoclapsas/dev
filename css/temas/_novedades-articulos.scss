@@ -1,0 +1,88 @@
+@import '../herramientas/_variables';
+@import '../herramientas/_queries';
+
+//asigno desde aquí la imagen de fondo para la página de "novedades"
+// para evitar dar un background fijo desde el "_banner.scss"
+.banner{
+	background-image: url(../../recursos/imagenes/novedades-en-clap.jpg);
+}
+.novedad-articulos{
+	margin-bottom: $title-1;
+}
+.novedad-articulo__item{
+	position: relative;
+	width: 100%;	
+	height: auto;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	transition: .5s;
+	&:hover{
+		box-shadow: 2px 2px 10px #ccc;
+	}
+}
+
+.novedad-articulo__header{
+	width: 100%;
+	height: 250px;
+	overflow: hidden;
+}
+
+.novedad-articulo__header__imagen{
+	width: 100%;
+	height: 100%;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	object-fit: cover;
+	cursor: pointer;
+	transition: .2s all;
+}
+
+.novedad-articulo__footer{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 40%;
+	padding: $title-4 $title-3;
+}
+
+.novedad-articulo__footer__titulo{
+	font-size: $title-2+1;
+	@include querie(mobile){
+		font-size: $title-3;
+	}
+}
+.novedad-articulo__footer__titulo__enlace{
+	font-family: 'Roboto';
+	text-decoration: none;
+}
+.novedad-articulo__footer__fecha{
+	padding-bottom: 20px;
+	border-bottom: 1px solid #ccc;
+	font-size: $title-5;
+
+}
+
+
+.novedad-articulo__footer__parrafo{
+	padding-bottom: 45px;
+	padding-top: 25px;
+	font-size: $title-4+1;
+
+}
+
+.novedad-articulo__footer__enlace{
+	position: absolute;
+	bottom: 15px;
+	align-self: flex-end;
+	padding: 5px 18px;
+	border: 1px solid $rojo;
+	border-radius: 3px;
+	text-decoration: none;
+	font-size: $title-4+1;
+	color: $rojo;
+	cursor: pointer;
+	&:hover{
+		background-color: $rojo;
+		color: #fff;
+	}
+}

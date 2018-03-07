@@ -1,0 +1,44 @@
+@import "../../herramientas/_variables";
+
+.blog-titulo, .blog-subtitulo{
+	margin: $gutter-d 0;
+	font-size: $title-1;
+	font-family: 'Roboto';
+	color: $blue-elegant;
+	@include querie(mobile){
+		font-size: $title-2;
+	}
+}
+.blog-titulo{
+	text-align: center;
+}
+.blog-parrafo{
+	margin-bottom: $gutter-d;
+	line-height: 1.7;
+	font-size: $title-2;
+	text-align: justify;
+	@include querie(mobile){
+		font-size: $title-3;
+	}
+}
+.blog-tematica{
+	width: 100%;
+	height: 300px;
+	margin: $gutter-d 0;
+}
+.blog-tematica__imagen{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.blog-lista{
+	margin-left: $header-1;
+	margin-bottom: $gutter-d;
+}
+.blog-lista__item{
+	font-size: $title-2;
+	line-height: 1.7;
+	@include querie(mobile){
+		font-size: $title-3;
+	}
+}

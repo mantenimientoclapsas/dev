@@ -1,0 +1,135 @@
+//asigno la imagen de fondo para la página de "que hacemos"
+// para evitar dar un background fijo desde el "_banner.scss"
+.banner{
+	background-image: url(../../recursos/imagenes/integrantes-clap.jpg);
+}
+
+#item-1 {
+	grid-column: 1 / 3;
+	grid-row: 1 / 3;
+	@include querie(mobile){
+		grid-column: 1 / 6;
+		grid-row: 1 / 2;
+	} 
+	@include querie(mobile-pequeno){
+		grid-column: 1 / 6;
+		grid-row: span 1;
+	}
+}
+
+#item-2 {
+	grid-column: 3 / 5;
+	grid-row: 1 / 2;
+	@include querie(mobile){
+		grid-column: 1 / 3;
+		grid-row: 2 / 3;
+	}
+	@include querie(mobile-pequeno){
+		grid-column: 1 / 6;
+		grid-row: span 1;
+	}  
+}
+
+#item-3 {
+	grid-column: 5 / 6;
+	grid-row: 1 / 2;
+	@include querie(mobile){
+		grid-column: 3 / 6;
+		grid-row: 2 / 3;
+	}
+	@include querie(mobile-pequeno){
+		grid-column: 1 / 6;
+		grid-row: span 1;
+	}  
+}
+
+#item-4 {
+	grid-column: 3 / 5;
+	grid-row: 2 / 3; 
+	@include querie(mobile){
+		grid-column: 1 / 3;
+		grid-row: 3 / 4;
+	}
+	@include querie(mobile-pequeno){
+		grid-column: 1 / 6;
+		grid-row: span 1;
+	}  
+}
+
+#item-5 {
+	grid-column: 5 / 6;
+	grid-row: 2 / 3;
+	@include querie(mobile){
+		grid-column: 3 / 6;
+		grid-row: 3 / 4;
+	}
+	@include querie(mobile-pequeno){
+		grid-column: 1 / 6;
+		grid-row: span 1;
+	}   
+}
+
+#item-6 {
+	grid-column: 1 / 2;
+	grid-row: 3 / 5;
+	@include querie(mobile){
+		grid-column: 1 / 3;
+		grid-row: 4 / 5;
+	}
+	@include querie(mobile-pequeno){
+		grid-column: 1 / 6;
+		grid-row: span 1;
+	}   
+}
+
+#item-7 {
+	grid-column: 2 / 4;
+	grid-row: 3 / 4;
+	@include querie(mobile){
+		grid-column: 3 / 6;
+		grid-row: 4 / 5;
+	}
+	@include querie(mobile-pequeno){
+		grid-column: 1 / 6;
+		grid-row: span 1;
+	}   
+}
+
+#item-8 {
+	grid-column: 4 / 6;
+	grid-row: 3 / 4;
+	@include querie(mobile){
+		grid-column: 1 / 6;
+		grid-row: 5 / 6;
+	}
+	@include querie(mobile-pequeno){
+		grid-column: 1 / 6;
+		grid-row: span 1;
+	} 
+}
+
+#item-9 {
+	grid-column: 2 / 4;
+	grid-row: 4 / 5;
+	@include querie(mobile){
+		grid-column: 1 / 3;
+		grid-row: 6 / 7;
+	}
+	@include querie(mobile-pequeno){
+		grid-column: 1 / 6;
+		grid-row: span 1;
+	}  
+}
+
+#item-10 {
+	grid-column: 4 / 6;
+	grid-row: 4 / 5;
+	@include querie(mobile){
+		grid-column: 3 / 6;
+		grid-row: 6 / 7;
+	}
+	@include querie(mobile-pequeno){
+		grid-column: 1 / 6;
+		grid-row: span 1;
+	}   
+}

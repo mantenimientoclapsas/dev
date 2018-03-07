@@ -1,0 +1,50 @@
+@import "../herramientas/_variables";
+@import "../herramientas/_queries";
+.contenedor-referencia{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 $gutter-grid;
+    @include querie(mobile){
+        padding: 0 $gutter-r;
+    }
+}
+.contenedor-referencia__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    @include querie(tablet){
+        width: 100%;
+    }
+}
+.contenedor-referencia__titulo {
+    font-family: 'Roboto';
+    font-size: 24px;
+}
+.contenedor-referencia__imagen {
+    width: 70px;
+    height: 70px;
+    margin-top: 20px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: $title-2;
+}
+
+.contenedor-referencia__parrafo {
+    font-size: 16px;
+    width: 360px;
+    font-style: italic;
+    text-align: center;
+    @include querie(mobile){
+        width: auto;
+    }
+}
+.contenedor-referencia__autor {
+    margin: 10px;
+    font-family: 'Roboto';
+    font-size: 16px;
+    color: rgba(73, 74, 74, 0.5);
+}

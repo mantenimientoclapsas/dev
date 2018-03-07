@@ -1,0 +1,27 @@
+@mixin querie($version){
+	$desktop         : "(max-width: 920px)";
+	$tablet          : "(max-width: 850px)";
+	$mobile          : "(max-width: 520px)";
+	$mobile-pequeno  : "(max-width: 400px)";
+
+	@if $version == "desktop" {
+		@media screen and #{$desktop}{
+			@content;
+		}	
+	}
+	@else if $version == "tablet"{
+		@media screen and #{$tablet}{
+			@content;
+		}	
+	}
+	@else if $version == "mobile"{
+		@media screen and #{$mobile}{
+			@content;
+		}	
+	}
+	@else if $version == "mobile-pequeno"{
+		@media screen and #{$mobile-pequeno}{
+			@content;
+		}	
+	}
+}

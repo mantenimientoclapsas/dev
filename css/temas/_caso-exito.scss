@@ -1,0 +1,66 @@
+@import '../herramientas/_variables';
+@import '../herramientas/_queries';
+
+//contenedor general de todo el caso de exito
+.caso-exito{
+	margin-bottom: 70px;
+	@include querie(tablet){
+		margin-bottom: $gutter-d;
+	}
+}
+.caso-exito__item{
+	width: 50%;
+	&:nth-of-type(2){
+		background-color: tomato;
+	}
+	@include querie(mobile){
+		width: 100%;
+	}
+}
+.caso-exito__imagen{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+//contenedor general para el texto sobre el caso de éxito
+.contenedor-caso-exito__texto{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 0 $gutter-grid;
+	font-size: $title-3;
+	@media screen and (max-width: 890px){
+		padding: 10px $gutter-r;
+		font-size: $title-4;
+	}
+}
+.caso-exito__texto--cursive{
+	font-style: italic;
+}
+.caso-exito__autor{
+	font-family: 'Roboto';
+	font-size: $title-3;
+}
+.caso-exito__texto, .caso-exito__autor, .caso-exito__enlace, .caso-exito__enlace--icono{
+	color: #fff;
+}
+.caso-exito__texto{
+	margin-bottom: $gutter-r;
+	text-align: justify;
+}
+.caso-exito__enlace{
+	display: flex;
+	align-items: center;
+	margin-top: $gutter-d;
+	font-size: $title-4;
+	text-decoration: none;
+}
+.caso-exito__enlace--icono{
+	padding-top: 1px;
+    margin-left: 10px;
+	font-size: $title-1;
+	@include querie(mobile){
+		font-size: $title-2;
+	}
+}

@@ -1,0 +1,15 @@
+@import "../../base/_base";
+@import "../../base/_fuente";
+@import "../../base/_menu";
+@import "../../temas/_banner";
+@import "../../layout/_layout-blog";
+@import "../../temas/temas-blog/_contenido-blog";
+@import "../../temas/temas-blog/_redes-sociales-blog";
+@import "../../base/_footer";
+
+//hago esto para no crear un archivo unicamente para establecer un background al banner
+//lo coloco al final porque el archivo "_novedades-articulos" 
+//ya tiene un background para el banner de su propia sección, de esta manera gana la cascada
+.banner{
+	background-image: url(../../../recursos/imagenes/ceo-clap.jpg);
+}

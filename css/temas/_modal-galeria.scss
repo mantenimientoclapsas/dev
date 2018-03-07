@@ -1,0 +1,101 @@
+@import "../herramientas/_variables";
+@import "../herramientas/_queries";
+
+.ed-modal-container{
+    position:fixed;
+    width:100%;
+    //para corregir el bug de que a veces 
+    //no cubre completamente el viewport en versiones de Chrome
+    height: 9999px; 
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    padding: 0 100px;
+    background: rgba(#000,.96);
+    z-index: 500;
+    @include querie(tablet){
+      padding: 0 $gutter-r;  
+    }
+}
+.ed-modal-container{
+    &:after, &:before{
+        content:"";
+        position:absolute;
+        top:2rem;
+        width:2rem;
+        height:2px;
+        background-color: #999;
+        transform:rotate(45deg);
+        opacity:.6;
+        cursor: pointer;
+    }
+    &:before{
+        right:1rem; 
+    } 
+    &:after{
+        right:1rem;
+        transform:rotate(-45deg);   
+    }
+    //&:hover:before{
+        //background-color: #fff;
+        //cursor: pointer;  
+    //}
+    //&:hover:after{
+        //background-color: #fff;
+        //cursor: pointer;
+    //}
+}
+
+//Ventana Modal
+//Este es el contenedor general de la ventana modal
+.ed-modal-content{
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    margin: auto;
+    margin-top: 70px;
+    background-color: #fafafa;
+    border-radius: 3px;
+    @include querie(mobile){
+       width: 100%;
+       left: 0;
+    }
+}
+.modal__header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55px;
+    padding: 0 $gutter-r;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    background-color: $rojo;
+}
+.modal__header__titulo{
+    font-family: 'Roboto';
+    font-size: $title-2+3;
+    color: #fff;
+    @media screen and (max-width: 650px){
+       font-size: $title-3;
+    }
+}
+.modal__footer{
+    width: 100%;
+    padding: 60px $gutter-r;
+    @media screen and (max-width: 650px){
+       padding: $gutter-r;
+    }
+}
+.modal__footer__pie-pagina{
+    display: flex;
+    justify-content: center;
+}
+.modal__footer__item{
+    margin-left: 40px;
+    margin-bottom: $gutter-d;
+    font-size: $title-3;
+    @media screen and (max-width: 650px){
+        font-size: $title-4;
+        margin-left: 20px;
+    }
+}

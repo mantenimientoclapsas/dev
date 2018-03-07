@@ -1,0 +1,50 @@
+@import "../../herramientas/_variables";
+@import "../../herramientas/_queries";
+
+.contenedor-redes-sociales{
+	display: flex;
+}
+.contenedor-redes-sociales__titulo{
+	font-family: 'Roboto';
+	font-size: $title-2;
+	color: $blue-elegant;
+	margin-bottom: $gutter-r;
+	@include querie(mobile){
+		font-size: $title-4;
+	}
+}
+.contenedor-redes-sociales__item{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 35px;
+	height: 35px;
+	margin-right: 10px;
+	border-radius: 3px;
+	&:hover{
+		cursor: pointer;
+	}
+}
+.facebook, .twitter{
+	font-family: 'FontAwesome';
+	color: #fff;
+}
+.facebook{
+	background-color: $color-fb;
+	&:hover{
+		background-color: darken(#3B5998, 6);
+	}
+	&:before{
+		content: "\f09a";	
+	}
+	
+}
+.twitter{
+	background-color: $color-tw;
+	&:hover{
+		background-color: darken(#55ACEE, 6);
+	}
+	&:before{
+		content: "\f099";
+	}
+}
