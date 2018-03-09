@@ -2,11 +2,12 @@
 @import '../herramientas/_queries';
 
 .diferencia{
-	margin-bottom: 45px;
+	margin-bottom: $gutter-d*2;
 }
 
 //tarjeta general de items "por qué elegirnos"
 .diferencia__item{
+	margin: $gutter-d 0;
 	padding: 10px;
 	border: 1px solid #ccc;
 	border-radius: 4px;

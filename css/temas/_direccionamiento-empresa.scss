@@ -1,5 +1,13 @@
 @import '../herramientas/_variables';
 @import '../herramientas/_queries';
+
+//esta clase actúa como modificador implícito, ya que en la pagina 
+//de index a esta clase le escribí distintas propiedades visuales
+.contenedor-centrado__imagen{
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+}
 .direccionamiento{
 	justify-content: space-between;
 	align-items: center;

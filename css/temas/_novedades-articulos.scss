@@ -6,8 +6,10 @@
 .banner{
 	background-image: url(../../recursos/imagenes/novedades-en-clap.jpg);
 }
-.novedad-articulos{
-	margin-bottom: $title-1;
+
+//contenedor general de todo el contenido de los artículos
+.seccion-articulos{
+	margin: $gutter-d*2 0;
 }
 .novedad-articulo__item{
 	position: relative;
@@ -16,6 +18,7 @@
 	border: 1px solid #ccc;
 	border-radius: 4px;
 	transition: .5s;
+	margin: $gutter-d 0;
 	&:hover{
 		box-shadow: 2px 2px 10px #ccc;
 	}

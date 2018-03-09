@@ -11,37 +11,29 @@
 	overflow: hidden;
 	width: 100%;
 	height: 100%;
-	transform: scale(1);
-	transition: 1s;
-	&:hover .galeria-2f-2c__imagen{
-		transition: 600ms;
-		transform: scale(1.1);
-		
-	} 
 }
 .galeria-2f-2c__imagen{
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
-	transition: 1s;
-	&:hover{
-		cursor: pointer;
-	}
+	cursor: pointer;
 }
+
 //deshabilitado por funcion de la ventana modal
-.galeria-2f-2c__filtro{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-color: rgba(dodgerblue, .10);
-	transition: 300ms;
-	&:hover{
-		background-color: rgba(dodgerblue, .15);
-		transition: 1s;
-	}
-}
+//.galeria-2f-2c__filtro{
+//	position: absolute;
+//	top: 0;
+//	left: 0;
+//	width: 100%;
+//	height: 100%;
+//	background-color: rgba(dodgerblue, .10);
+//	transition: 300ms;
+//	&:hover{
+//		background-color: rgba(dodgerblue, .15);
+//		transition: 1s;
+//	}
+//}
+
 //estilos para ventana modal dinámica desde javascript
 .js-contenedor-modal{
 	position: fixed;
@@ -62,15 +54,12 @@
 	width: 100%;
 	height: 80vh;
 	padding: 0 $gutter-grid;
-	//border: 1px solid $blue-elegant;
-	//box-shadow: 0 0 1px $blue-elegant;
+	cursor: pointer;
 }
 .js-modal-imagen{
 	width: 100%;
 	height: 100%;
-	object-fit: contain; //contain en vez de cover para que la imagen 
-						//siempre se visualize completa
-	
+	object-fit: cover; 
 }
 .js-icono-cerrar {
 	position: absolute;

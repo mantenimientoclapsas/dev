@@ -8,18 +8,22 @@
 	align-items: center;
 	width: 100%;
 	height: auto;
+	margin: $gutter-grid 0;
 	@include querie(mobile){
 		padding: 0 $gutter-r;
 	}
 }
- //regla css auxiliar para dar espacio en el bloque inicial del home
-.gutter-bottom--auxiliar{ 
-	margin-bottom: $gutter-grid;
-}
+
 .contenedor-centrado__imagen{
-	width: 150px;
-	height: 150px;
-	margin: $gutter-d+20;
+	width: 600px;
+	height: 300px;
+	object-fit: cover;
+	margin: $gutter-r*2 0;
+	@media screen and (max-width: 650px) {
+		width: 180px;
+		height: 180px;
+		border-radius: 50%;
+	}
 }
 //fa = fontawesome icono para las tarjetas de "nuestras especialidades"
 .contenedor-centrado__fa{
@@ -28,22 +32,22 @@
 	margin-bottom: 10px;
 }
 .contenedor-centrado__texto{
-	margin-bottom: 10px;
 	font-family: 'Roboto';
 	line-height: 1.7;
 	font-size: $title-1;
 	text-align: center;
 }
 .contenedor-centrado__parrafo{
-	width: 530px;
+	max-width: 530px;
 	font-family: 'Open sans';
 	font-size: $title-2;
 	text-align: center;
-	@include querie(tablet){
-		width: 100%;
-	}
-	@include querie(mobile){
+	@media screen and (max-width: 730px){
+		padding: 0 $gutter-r;
 		font-size: $title-3;
 		text-align: justify;
+	}
+	@media screen and (max-width: 560px){
+		padding: 0;
 	}
 }

@@ -3,10 +3,7 @@
 
 //contenedor general de todo el caso de exito
 .caso-exito{
-	margin-bottom: 70px;
-	@include querie(tablet){
-		margin-bottom: $gutter-d;
-	}
+	margin: $gutter-d*2 0;
 }
 .caso-exito__item{
 	width: 50%;
@@ -57,10 +54,14 @@
 	text-decoration: none;
 }
 .caso-exito__enlace--icono{
+	color: rgba(#fff, .79);
 	padding-top: 1px;
     margin-left: 10px;
 	font-size: $title-1;
 	@include querie(mobile){
 		font-size: $title-2;
+	}
+	&:hover{
+		color: rgba(#fff, .99);
 	}
 }

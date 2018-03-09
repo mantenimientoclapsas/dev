@@ -4,7 +4,7 @@
 .especialidad{
 	width: 100%;
 	padding: 0 $gutter-grid;
-	margin-bottom: $gutter-d;
+	margin: $gutter-d*2 0;
 	@include querie(tablet){
 		padding: 0 $gutter-r;
 	}
@@ -19,12 +19,16 @@
     @media screen and(max-width: 900px){
     	height: auto;
     }
-    @include querie(tablet){
-		margin-bottom: $gutter-d;
+    
+    &--primero{
+    	margin-top: $gutter-d;
     }
-    @include querie(mobile){
-		margin-bottom: 0;
-    }
+}
+.especialidad__icono{
+	@include querie (mobile){
+		width: 35px;
+		height: 35px;
+	}
 }
 .especialidad__title{
 	margin-top: 20px;

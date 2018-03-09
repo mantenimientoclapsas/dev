@@ -7,6 +7,7 @@
 	grid-template-rows: 1fr;
 	grid-gap: $gutter-d;
 	width: 100%;
+	margin: $gutter-d*2 0;
 	padding: 0 $gutter-grid;
 	@media screen and (max-width: 1080px){
 		grid-template-columns: 1fr;

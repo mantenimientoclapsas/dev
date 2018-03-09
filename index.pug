@@ -14,9 +14,10 @@ html(lang=es)
 		link(rel="stylesheet", href="css/pages/index.css")
 		link(rel="stylesheet", href="recursos/iconos-web/fontello/fontello.css")
 		link(rel="stylesheet", href="recursos/librerias/bootstrap.css")
-		link(rel="shortcut icon" href="recursos/logos/logo-clap-transparent.png" type="image/png")
+		link(rel="shortcut icon" href="recursos/logos/logo-clap-default-single.jpg")
 		link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,900,900i")
 		link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,400i,700|Open+Sans:700")
+		
 		
 	body
 		header.menu__contenedor
@@ -65,9 +66,9 @@ html(lang=es)
 						span(class="sr-only") Next
 		
 		
-		div(class="contenedor-centrado gutter-bottom--auxiliar")
+		div(class="contenedor-centrado")
 			h2(class="contenedor-centrado__texto") Somos una firma constituida en Barranquilla
-			img(src="recursos/svg/teamwork-3.svg" alt="Estamos creciendo a escala, sé parte de nuestra evolución" class="contenedor-centrado__imagen")
+			img(src="recursos/imagenes/reunion-clap.jpeg" alt="Estamos creciendo a escala, sé parte de nuestra evolución" class="contenedor-centrado__imagen")
 			p(class="contenedor-centrado__parrafo") Que promueve servicios de consultoría laboral, gerencia de proyectos inmobiliarios y acompañamiento a empresas e instituciones que buscan crecer a gran escala.
 		
 		section
@@ -75,49 +76,55 @@ html(lang=es)
 			div(class="grid-4f-3c especialidad")
 
 				div(class="grid-4f-3c__item especialidad__item")
-					span(class="fa fa-gear contenedor-centrado__fa")
+					div(class="especialidad__iconos")
+						img(src="recursos/svg/mantenimiento.svg" class="especialidad__icono")
 					p(class="especialidad__title") Mantenimiento preventivo, predictivo y correctivo en instalaciones eléctrica de baja y media tensión
 
 				div(class="grid-4f-3c__item especialidad__item")
-					span(class="fa fa-list-alt contenedor-centrado__fa")
+					div(class="especialidad__iconos")
+						img(src="recursos/svg/asesorias.svg" class="especialidad__icono")
 					p(class="especialidad__title") Asesorías, auditorías internas y externas en Sistema de Gestión de la Seguridad y Salud en el Trabajo
 
 				div(class="grid-4f-3c__item especialidad__item")
 					div(class="container-grid__item container-especialidad__item")
-					span(class="fa fa-lock contenedor-centrado__fa")
+						div(class="especialidad__iconos")
+							img(src="recursos/svg/seguridad-laboral.svg" class="especialidad__icono")
 					p(class="especialidad__title") Realizamos  actividades relacionadas con la seguridad y salud laboral a bussiness y/o costumer's
 
 				div(class="grid-4f-3c__item especialidad__item especialidad__item--order")
-					span(class="fa fa-briefcase contenedor-centrado__fa")
+					div(class="especialidad__iconos")
+							img(src="recursos/svg/arquitectura-e-ingenieria.svg" class="especialidad__icono")
 					p(class="especialidad__title") Interventoría de obras y demás actividades profesionales comerciales asociadas a la arquitectura e Ingeniería
 
-				div(class="grid-4f-3c__item especialidad__item")
-					span(class="fa fa-pencil contenedor-centrado__fa")
+				div(class="grid-4f-3c__item especialidad__item especialidad__item--primero")
+					div(class="container-grid__item container-especialidad__item")
+						div(class="especialidad__iconos")
+							img(src="recursos/svg/redes.svg" class="especialidad__icono")
 					p(class="especialidad__title") Diseño y construcción de redes de baja y media tensión con altos estándares de calidad de por medio
 
 				div(class="grid-4f-3c__item especialidad__item")
-					span(class="fa fa-certificate contenedor-centrado__fa")
+					div(class="container-grid__item container-especialidad__item")
+						div(class="especialidad__iconos")
+							img(src="recursos/svg/certificacion.svg" class="especialidad__icono")
 					p(class="especialidad__title") Asesorías para certificaciones y recertificaciones en cursos relacionados a la seguridad y salud laboral
 
 				div(class="grid-4f-3c__item especialidad__item")
-					span(class="fa fa-industry contenedor-centrado__fa")
+					div(class="especialidad__iconos")
+							img(src="recursos/svg/diseno-arquitectura.svg" class="especialidad__icono")
 					p(class="especialidad__title") Diseño arquitectónico y estructurales
 
 				div(class="grid-4f-3c__item especialidad__item")
-					span(class="fa fa-search contenedor-centrado__fa")
-					p(class="especialidad__title") Avalúos
+					div(class="especialidad__iconos")
+							img(src="recursos/svg/avaluos-comerciales.svg" class="especialidad__icono")
+					p(class="especialidad__title") Avalúos y capacitaciones para el desarrollo humano y prevención social
 
-				div(class="grid-4f-3c__item especialidad__item")
-					span(class="fa fa-eye contenedor-centrado__fa")
+				div(class="grid-4f-3c__item especialidad__item especialidad__item--ultimo")
+					div(class="especialidad__iconos")
+							img(src="recursos/svg/mantenimiento-infraestructura.svg" class="especialidad__icono")
 					p(class="especialidad__title") Mantenimientos a la infraestructura
-
-
-				div(class="grid-4f-3c__item especialidad__item")
-					span(class="fa fa-graduation-cap contenedor-centrado__fa")
-					p(class="especialidad__title") Capacitaciones para el desarrollo humano y prevención social
 				
 		section
-			h3(class="contenedor-centrado__texto") Casos de éxito
+			h3(class="contenedor-centrado__texto") Caso de éxito
 			div(class="grid-1f-2c caso-exito")
 				div(class="grid-1f-2c__item caso-exito__item contenedor-filtro")
 					img(src="recursos/imagenes/asistencia-clap.jpg" class="caso-exito__imagen", alt="Caso de éxito de proyecto en Consultoría Laboral y Arquitectura de Proyectos")
